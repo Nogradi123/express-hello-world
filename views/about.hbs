@@ -1,0 +1,17 @@
+<h1>About</h1>
+
+<br>
+<hr>
+<hr>
+<br>
+
+
+<div class="content-container">
+	{{#each content}}
+		<div class="pokeBox">
+			<h3>{{this.name}}</h3>
+			{{!-- <h4>Details Link : {{this.url}}</h4> --}}
+			<a href="{{this.url}}">Details</a>
+		</div>
+	{{/each}}
+</div>

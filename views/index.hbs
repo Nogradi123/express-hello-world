@@ -1,0 +1,29 @@
+<h1>{{pageName}}</h1>
+
+<hr>
+<h3>{{content}}</h3>
+<hr>
+<br>
+
+<div>
+    <h2>Section 2</h2>
+
+     <ul>
+        {{!-- <li>Hats</li>
+        <li>Dogs</li>
+        <li>Reptiles</li>
+        <li>Phones</li>
+        <li>Cars</li>
+        <li>Nails</li> --}}
+
+            {{#if showContent}}
+
+                {{#each content}}
+                    <li>{{this}} - Available</li>
+                 {{/each}}
+            {{else}}
+                <li>No new content for sale!</li>
+            {{/if}}
+        </ul>
+    </div>
+
